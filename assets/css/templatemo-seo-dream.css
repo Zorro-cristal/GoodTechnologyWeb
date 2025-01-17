@@ -5,23 +5,6 @@ TemplateMo 563 SEO Dream
 https://templatemo.com/tm-563-seo-dream
 
 /
-/* ---------------------------------------------
-Table of contents
-------------------------------------------------
-01. font & reset css
-02. reset
-03. global styles
-04. header
-05. banner
-06. features
-07. testimonials
-08. contact
-09. footer
-10. preloader
-11. search
-12. portfolio
-
---------------------------------------------- */
 /* 
 ---------------------------------------------
 font & reset css
@@ -33,6 +16,17 @@ font & reset css
 reset
 --------------------------------------------- 
 */
+
+:root {
+  --primary-color: #0f42d3;
+  --secondary-color: #38b54d;
+
+  --background-primary-color1: #2c4293;
+  --background-primary-color2: #1242cc;
+
+  --background-secondary-color1: #28ad4a;
+  --background-secondary-color2: #42b94f;
+}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -41,6 +35,10 @@ figure, header, nav, section, article, aside, footer, figcaption {
   padding: 0;
   border: 0;
   outline: 0;
+}
+
+a {
+  color: var(--secondary-color);
 }
 
 /* clear fix */
@@ -146,12 +144,12 @@ body {
 }
 
 ::selection {
-  background: #03a4ed;
+  background: var(--secondary-color);
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #03a4ed;
+  background: var(--secondary-color);
   color: #fff;
 }
 
@@ -182,7 +180,7 @@ body {
 .section-heading h6 {
   font-size: 15px;
   font-weight: 700;
-  color: #33ccc5;
+  color: var(--primary-color);
   text-transform: uppercase;
   margin-bottom: 15px;
 
@@ -200,11 +198,11 @@ body {
 
 .section-heading h2 em {
   font-style: normal;
-  color: #33ccc5;
+  color: var(--primary-color);
 }
 
 .section-heading h2 span {
-  color: #088ec3;
+  color: var(--secondary-color);
 }
 
 .main-blue-button a {
@@ -229,7 +227,7 @@ body {
 
 .main-green-button a {
   display: inline-block;
-  background-color: #33ccc5;
+  background-color: var(--primary-color);
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -244,7 +242,7 @@ body {
 .main-green-button a:hover {
   background-color: #4771cb!important;
   color: #fff!important;
-  border-bottom: 2px solid #33ccc5!important;
+  border-bottom: 2px solid var(--primary-color)!important;
 }
 
 
@@ -255,7 +253,7 @@ header
 */
 
 .background-header {
-  background-color: #33ccc5!important;
+  background-color: var(--primary-color)!important;
   height: 80px!important;
   position: fixed!important;
   top: 0px;
@@ -270,7 +268,7 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #33ccc5;
+  color: var(--primary-color);
 }
 
 .background-header .nav li a.active {
@@ -290,7 +288,7 @@ header
 }
 
 .header-area {
-  background-color: #33ccc5;
+  background-color: var(--primary-color);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -462,7 +460,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #33ccc5!important;
+  color: var(--primary-color)!important;
   padding-left: 25px;
 }
 
@@ -602,7 +600,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #33ccc5;
+  color: var(--primary-color);
 }
 
 @media (max-width: 1200px) {
@@ -635,14 +633,14 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #33ccc5!important;
+    color: var(--primary-color)!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
   }
   .header-area {
-    background-color: #33ccc5;
+    background-color: var(--primary-color);
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
@@ -696,7 +694,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #33ccc5!important;
+    color: var(--primary-color)!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -810,7 +808,7 @@ preloader
     height: 16px;
     top: 12px;
     left: 15px;
-    background: #33ccc5;
+    background: var(--primary-color);
     border-radius: 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -833,7 +831,7 @@ preloader
     width: 16px;
     height: 16px;
     margin-left: 16px;
-    background: #33ccc5;
+    background: var(--primary-color);
     border-radius: 50%;
 }
 
@@ -908,9 +906,26 @@ Banner Style
   color: #2a2a2a;
   line-height: 72px;
   background: #FA9D4D;
-  background: -webkit-linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);
-  background: -moz-linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);
-  background: linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);
+  background: -webkit-linear-gradient(180deg, #4267B2 0%, #1B4283 100%);
+  background: -moz-linear-gradient(180deg, #4267B2 0%, #1B4283 100%);
+  background: linear-gradient(180deg, #4267B2 0%, #1B4283 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-banner .left-content .h2-secondary {
+  border-top: 1px solid #eee;
+  margin-top: 30px;
+  padding-top: 20px;
+  margin-bottom: 45px;
+  font-size: 60px;
+  font-weight: 800;
+  color: #2a2a2a;
+  line-height: 72px;
+  background: #FA9D4D;
+  background: -webkit-linear-gradient(180deg, #3cb371 0%, #289951 100%);
+  background: -moz-linear-gradient(180deg, #3cb371 0%, #289951 100%);
+  background: linear-gradient(180deg, #3cb371 0%, #289951 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -959,7 +974,7 @@ Features Style
 
 .features-item:hover {
   background: rgb(51,204,197);
-  background: linear-gradient(105deg, rgba(51,204,197,1) 0%, rgba(8,141,195,1) 100%);
+  background: linear-gradient(105deg, var(--background-primary-color2) 0%, var(--background-primary-color1) 100%);
 }
 
 .features-item:hover h4 {
@@ -1043,7 +1058,7 @@ Features Style
 .features-item .line-dec {
   width: 100px;
   height: 2px;
-  background-color: rgba(51,204,197,0.3);
+  background-color: rgba(56,181,77,0.3);
   margin: 30px auto;
   transition: all 0.5s;
 }
@@ -1298,7 +1313,7 @@ About Us Style
 .about-us .about-item h4 {
   font-size:38px;
   font-weight: 800;
-  color:#088ec3;
+  color:var(--secondary-color);
 }
 
 .about-us .about-item h6 {
@@ -1414,7 +1429,7 @@ Portfolio
   left: 0;
   top: 0;
   background: rgb(51,204,197);
-  background: linear-gradient(105deg, rgba(51,204,197,1) 0%, rgba(8,141,195,1) 100%);
+  background: linear-gradient(105deg, var(--background-primary-color2) 0%, var(--background-primary-color1) 100%);
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -1468,8 +1483,8 @@ Portfolio
 }
 
 .our-portfolio .owl-nav span:hover {
-  color: #33ccc5;
-  border-color: #33ccc5;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 
@@ -1577,7 +1592,7 @@ form#contact textarea::placeholder {
 
 form#contact button {
   display: inline-block;
-  background-color: #33ccc5;
+  background-color: var(--primary-color);
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -1595,7 +1610,7 @@ form#contact button {
 form#contact button:hover {
   background-color: #4771cb!important;
   color: #fff!important;
-  border-bottom: 2px solid #33ccc5!important;
+  border-bottom: 2px solid var(--primary-color)!important;
 }
 
 /* 
@@ -1610,7 +1625,7 @@ footer p {
 }
 
 footer p a {
-  color: #33ccc5;
+  color: var(--primary-color);
   transition: all .5s;
 }
 
