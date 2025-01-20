@@ -1,7 +1,7 @@
 // Se ejecuta al cargar la pagina
 $(window).on('load',function() {
     // Obtiene e implamenta la inforamcion en el json.
-    fetch('../info.json').then(
+    fetch('../../info.json').then(
         response => response.json()).then(
             data => {
                 document.getElementById('cant_empresas').innerHTML= data.cant_empresas + "+";

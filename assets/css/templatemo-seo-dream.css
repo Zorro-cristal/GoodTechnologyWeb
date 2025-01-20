@@ -923,10 +923,10 @@ Banner Style
   margin-top: 30px;
   padding-top: 20px;
   margin-bottom: 45px;
-  font-size: 10vw;
+  font-size: 72px;
   font-weight: 800;
   color: #2a2a2a;
-  line-height: 10vw;
+  line-height: 60px;
   background: #FA9D4D;
   background: -webkit-linear-gradient(180deg, #4267B2 0%, #1B4283 100%);
   background: -moz-linear-gradient(180deg, #4267B2 0%, #1B4283 100%);
@@ -944,10 +944,10 @@ Banner Style
   margin-top: 30px;
   padding-top: 20px;
   margin-bottom: 45px;
-  font-size: 10vw;
+  font-size: 72px;
   font-weight: 800;
   color: #2a2a2a;
-  line-height: 10vw;
+  line-height: 60px;
   background: #FA9D4D;
   background: -webkit-linear-gradient(180deg, #3cb371 0%, #289951 100%);
   background: -moz-linear-gradient(180deg, #3cb371 0%, #289951 100%);
@@ -966,7 +966,17 @@ Banner Style
   max-width: 593px;
 }
 
+@media (max-width: 550px) {
+  .main-banner .left-content .h2-secondary {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
 
+  .main-banner .left-content h2 {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+}
 
 /* 
 ---------------------------------------------
