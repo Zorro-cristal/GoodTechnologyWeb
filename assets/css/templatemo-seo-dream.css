@@ -27,6 +27,28 @@ reset
   --background-secondary-color1: #28ad4a;
   --background-secondary-color2: #42b94f;
 }
+
+#whatsapp-button {
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  background-color: green; 
+  border-radius: 50%; 
+  width: 60px; 
+  height: 60px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1000; 
+}
+
+#whatsapp-button .bi-whatsapp {
+  color: white; 
+  font-size: 36px; 
+  width: auto; 
+  height: auto; 
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
