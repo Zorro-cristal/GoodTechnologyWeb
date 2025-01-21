@@ -1,34 +1,5 @@
 // Se ejecuta al cargar la pagina
 $(window).on('load',function() {
-    // Asigna la funcion para ejecutar la funcion encargada del formulario de contactos
-    $(document).ready(function() {
-        var toastEl = document.getElementById('liveToast');
-        var toast = new bootstrap.Toast(toastEl);
-        
-        $('#liveToastBtn').click(function() {
-            toast.show();
-        });
-
-        $('#contact').on('submit', function(e) { 
-            e.preventDefault();
-            $.ajax({ 
-                type: 'POST', 
-                url: 'assets/php/email.php', 
-                data: $(this).serialize(), 
-                success: function(response) {
-                    console.log(response);
-                    $('#response').html(response); 
-                    toast.show();
-                }, 
-                error: function(xhr, status, error) { 
-                    console.error(xhr, status, error);
-                    $('#response').html('Error al enviar el correo.', xhr.responseText); 
-                    toast.show();
-                } 
-            }); 
-        }); 
-    });
-
     // Obtiene e implamenta la inforamcion en el json.
     fetch('../../info.json').then(
         response => response.json()).then(
@@ -39,3 +10,20 @@ $(window).on('load',function() {
             }
         ).catch(error => console.error("Error al recuperar informacion del JSON: ", error));
 });
+
+function enviarCorreo(formulario_event) {
+    formulario_event.preventDefault();
+    const name= document.getElementById("name").value;
+    const phone= document.getElementById("phone").value;
+    const email= document.getElementById("email").value;
+    let subject= document.getElementById("subject").value;
+    subject= subject.replace(" ", "%20");
+    let message= document.getElementById("message").value;
+    message= message.replace('/\n/g', '%0D%0A');
+    message= message.replace(" ", "%20");
+
+    informacion_extra= `Nombre: ${name}, Telefono: ${phone}, Correo: ${email}`;
+    console.log(informacion_extra);
+    window.location.href = `mailto:administracion@goodtechnology.com.py?subject=${subject}&body=${message}%0D%0A${informacion_extra}`;
+    //console.log(`mailto:administracion@goodtechnology.com.py?subject=${subject}&body=${message}%0D%0A${informacion_extra}`);
+}

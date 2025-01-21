@@ -529,7 +529,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact">
+          <form id="contact" onsubmit="return enviarCorreo(event);">
             <div class="row">
               <div class="col-lg-6 offset-lg-3">
                 <div class="section-heading">
@@ -578,13 +578,14 @@
                       <div class="icon">
                         <img src="assets/images/contact-icon-01.png" alt="email icon">
                       </div>
-                      <a href="#">info@company.com</a>
+                      <a href="#">administracion@goodtechnology.com.py</a>
                     </li>
                     <li>
                       <div class="icon">
                         <img src="assets/images/contact-icon-02.png" alt="phone">
                       </div>
-                      <a href="https://api.whatsapp.com/send?phone=595991776544&amp;text=Hola,%20me%20gustaria%20saber%20mas%20de%20sus%20servicios...">+001-002-0034</a>
+                      <a href="https://api.whatsapp.com/send?phone=595991776544&amp;text=Hola,%20me%20gustaria%20saber%20mas%20de%20sus%20servicios...">
+                        +5959 991 776 544</a>
                     </li>
                     <li>
                       <div class="icon">
@@ -605,7 +606,7 @@
   <footer>
     <div class="container" id="footer">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-2" id="menu_footer">
           <ul>
             <li style="margin:5px"><a href="#top">Inicio</a></li>
             <li style="margin:5px"><a href="#features">Features</a></li>
@@ -615,10 +616,18 @@
             <li style="margin:5px"><a href="#contact-section">Contacto</a></li>
           </ul>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-5" id="map_footer">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.0878344613884!2d-57.563749927182805!3d-25.33483347965519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da9321fe88011%3A0x3c125493ccfbb7b1!2sEdificio%20M4%2C%20Rodriguez%20de%20Francia%201530%2C%20Fernando%20de%20la%20Mora%20110320!5e0!3m2!1ses!2spy!4v1737377750570!5m2!1ses!2spy" 
+            width="500" height="350" style="border:1;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-lg-3" id="info_footer">
           <div class="row">
             <img src="https://cdn.prod.website-files.com/5af1ad6f9cb3e2338818b083/5f19fedeeed2014400c6576c_gps%20icon.webp" class="img-responsive" style="height: 50px;width: 60px;"/>
-            <p style="width: auto;" id="direccion1">
+            <p style="width: 80%;" id="direccion1">
               Avda. Rodriguez de Francia Nº 1530. Edificio M4 Galeria. 2do piso. Loc. 110. <br/>Asunción, Paraguay<br/><br/>
             </p>
           </div>
@@ -626,14 +635,6 @@
             <img src="https://cdn.prod.website-files.com/5af1ad6f9cb3e2338818b083/5f19fedeeed2014cecc65770_phone%20icon.webp" class="img-responsive" style="height: 50px;width: 60px;"/>
             <h3 style="width: auto;">+595 991 776 544</h3>
           </div>
-        </div>
-        <div class="col-lg-5">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.0878344613884!2d-57.563749927182805!3d-25.33483347965519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da9321fe88011%3A0x3c125493ccfbb7b1!2sEdificio%20M4%2C%20Rodriguez%20de%20Francia%201530%2C%20Fernando%20de%20la%20Mora%20110320!5e0!3m2!1ses!2spy!4v1737377750570!5m2!1ses!2spy" 
-            width="500" height="350" style="border:1;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
       <div class="row">
@@ -654,11 +655,11 @@
   <div class="toast-container position-fixed bottom-0 start-0 p-3">
     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
-        <strong class="me-auto" id="aviso_titulo">Bootstrap</strong>
+        <strong class="me-auto" id="aviso_titulo">Aviso</strong>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
       <div class="toast-body" id="aviso_mensaje">
-        Hello, world! This is a toast message.
+        Error desconocido.
       </div>
     </div>
   </div>
