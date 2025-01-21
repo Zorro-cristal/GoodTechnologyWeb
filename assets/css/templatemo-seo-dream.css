@@ -61,6 +61,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
 
 a {
   color: var(--secondary-color);
+  word-wrap: break-word;
 }
 
 /* clear fix */
@@ -970,10 +971,6 @@ Banner Style
 }
 
 @media (max-width: 550px) {
-  #map_footer {
-    display: none;
-  }
-
   .main-banner .left-content .h2-secondary {
     font-size: 10vw;
     line-height: 10vw;
@@ -1553,7 +1550,7 @@ contact
 }
 
 .contact-us .contact-info {
-  padding: 40px 30px;
+  padding: 40px 5px;
   border: 2px solid #eee;
 }
 
