@@ -57,7 +57,7 @@
               <li class="scroll-to-section"><a href="#about">Nosotros</a></li>
               <li class="scroll-to-section"><a href="#services">Servicios</a></li>
               <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
-              <li class="scroll-to-section"><a href="#footer">Contactos</a></li> 
+              <li class="scroll-to-section"><a href="#contact-section">Contactos</a></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -525,6 +525,83 @@
     </div>
   </div>
 
+  <div id="contact-section" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                  <h6>Contactanos</h6>
+                  <h2>Estamos aquí para ti. Déjanos tu mensaje y nos pondremos en contacto contigo.</h2>
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="name" name="name" id="name" placeholder="Nombre completo" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="tel" name="phone" id="phone" placeholder="Numero de telefono" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Tu correo" required="" autocomplete="on">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="subject" name="subject" id="subject" placeholder="Asunto" autocomplete="on">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="Mensaje" required=""></textarea>  
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="main-button ">Enviar mensaje</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="contact-info">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <img src="assets/images/contact-icon-01.png" alt="email icon">
+                      </div>
+                      <a href="#">info@company.com</a>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <img src="assets/images/contact-icon-02.png" alt="phone">
+                      </div>
+                      <a href="https://api.whatsapp.com/send?phone=595991776544&amp;text=Hola,%20me%20gustaria%20saber%20mas%20de%20sus%20servicios...">+001-002-0034</a>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <img src="assets/images/contact-icon-03.png" alt="location">
+                      </div>
+                      <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.0878344613884!2d-57.563749927182805!3d-25.33483347965519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da9321fe88011%3A0x3c125493ccfbb7b1!2sEdificio%20M4%2C%20Rodriguez%20de%20Francia%201530%2C%20Fernando%20de%20la%20Mora%20110320!5e0!3m2!1ses!2spy!4v1737377750570!5m2!1ses!2spy" id="direccion2">Avda. Rodriguez de Francia Nº 1530. Edificio M4 Galeria. 2do piso. Loc. 110. - Asunción, Paraguay</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <div class="container" id="footer">
       <div class="row">
@@ -535,12 +612,13 @@
             <li style="margin:5px"><a href="#about">Nosotros</a></li>
             <li style="margin:5px"><a href="#services">Servicios</a></li>
             <li style="margin:5px"><a href="#portfolio">Portfolio</a></li>
+            <li style="margin:5px"><a href="#contact-section">Contacto</a></li>
           </ul>
         </div>
         <div class="col-lg-4">
           <div class="row">
             <img src="https://cdn.prod.website-files.com/5af1ad6f9cb3e2338818b083/5f19fedeeed2014400c6576c_gps%20icon.webp" class="img-responsive" style="height: 50px;width: 60px;"/>
-            <p style="width: auto;">
+            <p style="width: auto;" id="direccion1">
               Avda. Rodriguez de Francia Nº 1530. Edificio M4 Galeria. 2do piso. Loc. 110. <br/>Asunción, Paraguay<br/><br/>
             </p>
           </div>
@@ -572,6 +650,19 @@
     class="whatsapp-button-footer w-inline-block">
       <i class="bi bi-whatsapp"></i>
   </a>
+
+  <div class="toast-container position-fixed bottom-0 start-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto" id="aviso_titulo">Bootstrap</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" id="aviso_mensaje">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+  </div>
+
   <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

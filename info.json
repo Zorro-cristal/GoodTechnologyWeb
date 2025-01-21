@@ -1,5 +1,11 @@
 {
     "cant_empresas": 15,
     "cant_clientes": 15,
-    "cant_proyectos": 15
+    "cant_proyectos": 15,
+    "direccion": "Avda. Rodriguez de Francia Nº 1530. Edificio M4 Galeria. 2do piso. Loc. 110.",
+    "ciudad": "Asunción, Paraguay",
+    "telefono": "+5959 991 776 544",
+    "link-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.0878344613884!2d-57.563749927182805!3d-25.33483347965519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da9321fe88011%3A0x3c125493ccfbb7b1!2sEdificio%20M4%2C%20Rodriguez%20de%20Francia%201530%2C%20Fernando%20de%20la%20Mora%20110320!5e0!3m2!1ses!2spy!4v1737377750570!5m2!1ses!2spy",
+    "link-whatsapp": "https://api.whatsapp.com/send?phone=595991776544&amp;text=Hola,%20me%20gustaria%20saber%20mas%20de%20sus%20servicios...",
+    "correo": ""
 }
