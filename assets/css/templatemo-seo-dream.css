@@ -923,14 +923,14 @@ Banner Style
 }
 
 .main-banner .left-content h2 {
-  border-top: 1px solid #eee;
+  /* border-top: 1px solid #eee; */
   margin-top: 30px;
   padding-top: 20px;
   margin-bottom: 45px;
-  font-size: 72px;
+  font-size: 60px;
   font-weight: 800;
   color: #2a2a2a;
-  line-height: 60px;
+  line-height: 80px;
   background: #FA9D4D;
   background: -webkit-linear-gradient(180deg, #4267B2 0%, #1B4283 100%);
   background: -moz-linear-gradient(180deg, #4267B2 0%, #1B4283 100%);
@@ -944,14 +944,14 @@ Banner Style
 }
 
 .main-banner .left-content .h2-secondary {
-  border-top: 1px solid #eee;
+  /* border-top: 1px solid #eee; */
   margin-top: 30px;
   padding-top: 20px;
   margin-bottom: 45px;
-  font-size: 72px;
+  font-size: 37px;
   font-weight: 800;
   color: #2a2a2a;
-  line-height: 60px;
+  line-height: 40px;
   background: #FA9D4D;
   background: -webkit-linear-gradient(180deg, #3cb371 0%, #289951 100%);
   background: -moz-linear-gradient(180deg, #3cb371 0%, #289951 100%);
