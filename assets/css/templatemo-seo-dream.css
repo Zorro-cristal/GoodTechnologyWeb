@@ -927,10 +927,10 @@ Banner Style
   margin-top: 30px;
   padding-top: 20px;
   margin-bottom: 45px;
-  font-size: 50px;
+  font-size: 200%;
   font-weight: 800;
   color: #2a2a2a;
-  line-height: 70px;
+  line-height: 120%;
   background: #1B4283;
   background: -webkit-linear-gradient(180deg, #4267B2 0%, #1B4283 100%);
   background: -moz-linear-gradient(180deg, #4267B2 0%, #1B4283 100%);
@@ -948,16 +948,25 @@ Banner Style
   margin-top: 30px;
   padding-top: 20px;
   margin-bottom: 45px;
-  font-size: 23px;
+  width: 90%;
+  padding-left: 90%;
+  font-size: 100%;
   font-weight: 800;
   color: #2a2a2a;
-  line-height: 30px;
+  line-height: 150%;
   background: #289951;
   background: -webkit-linear-gradient(180deg, #3cb371 0%, #289951 100%);
   background: -moz-linear-gradient(180deg, #3cb371 0%, #289951 100%);
   background: linear-gradient(180deg, #3cb371 0%, #289951 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.nav li a {
+  line-height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .main-banner .right-image {
@@ -968,18 +977,6 @@ Banner Style
 
 .main-banner .right-image img {
   max-width: 593px;
-}
-
-@media (max-width: 550px) {
-  .main-banner .left-content .h2-secondary {
-    font-size: 10vw;
-    line-height: 10vw;
-  }
-
-  .main-banner .left-content h2 {
-    font-size: 10vw;
-    line-height: 10vw;
-  }
 }
 
 /* 
@@ -1781,5 +1778,8 @@ responsive
   }
   form#contact {
     padding: 30px;
+  }
+  .logo {
+    margin-left: 0;
   }
 }
