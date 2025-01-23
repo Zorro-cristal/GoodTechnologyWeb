@@ -330,6 +330,7 @@ header
 .header-area .main-nav {
   min-height: 80px;
   background: transparent;
+  max-width: 90vw;
 }
 
 .header-area .main-nav .logo {
@@ -1781,6 +1782,6 @@ responsive
   }
   .logo {
     margin-left: 0 !important;
-    max-height: ;
+    max-width: 50vw;
   }
 }
