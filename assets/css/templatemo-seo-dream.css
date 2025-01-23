@@ -1780,6 +1780,7 @@ responsive
     padding: 30px;
   }
   .logo {
-    margin-left: 0;
+    margin-left: 0 !important;
+    max-height: ;
   }
 }
