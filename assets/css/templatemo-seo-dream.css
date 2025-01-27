@@ -1463,6 +1463,7 @@ Portfolio
   overflow: hidden;
   max-width: 90% !important;
   max-height: 90% !important;
+  filter: grayscale(90%);
 }
 
 .portfolio-item .thumb .hover-content {
