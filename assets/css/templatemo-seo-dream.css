@@ -1453,11 +1453,16 @@ Portfolio
 .portfolio-item .thumb {
   position: relative;
   border-radius: 50px;
+  align-content: center;
+  display: grid;
+  place-items: center;
+  height: 35vh;
 }
 
 .portfolio-item .thumb img {
-  border-radius: 50px;
   overflow: hidden;
+  max-width: 90% !important;
+  max-height: 90% !important;
 }
 
 .portfolio-item .thumb .hover-content {
@@ -1470,6 +1475,9 @@ Portfolio
   background: linear-gradient(105deg, var(--background-primary-color2) 0%, var(--background-primary-color1) 100%);
   width: 100%;
   height: 100%;
+  align-content: center;
+  display: grid;
+  place-items: center;
   opacity: 0;
   visibility: hidden;
   transition: all .5s;
