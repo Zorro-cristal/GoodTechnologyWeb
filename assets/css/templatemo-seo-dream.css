@@ -941,6 +941,7 @@ Banner Style
 }
 
 .container {
+  padding-top: 10px;
   max-width: none;
 }
 
@@ -961,6 +962,7 @@ Banner Style
   background: linear-gradient(180deg, #3cb371 0%, #289951 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: none;
 }
 
 .nav li a {
@@ -1461,7 +1463,7 @@ Portfolio
 
 .portfolio-item .thumb img {
   overflow: hidden;
-  max-width: 90% !important;
+  width: 75% !important;
   max-height: 90% !important;
   filter: grayscale(90%);
 }
