@@ -994,6 +994,14 @@ Features Style
 --------------------------------------------- 
 */
 
+.owl-stage .owl-item {
+  width: 250px !important;
+}
+
+.owl-dots {
+  display: none;
+}
+
 .features .features-content {
   z-index: 2;
   position: relative;
