@@ -281,7 +281,7 @@ header
 .rounded-box {
   padding: 20px;
   border-radius: 15px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(15, 66,211, 0.65));
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255,255, 0.65));
   margin: 20px auto; /* Centra el div en la página */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
@@ -327,7 +327,7 @@ header
   left: 0px;
   right: 0px;
   z-index: 100;
-  height: 100px;
+  height: 80px;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
@@ -336,6 +336,7 @@ header
 
 .header-area .main-nav {
   min-height: 80px;
+  align-content: center;
   background: transparent;
   max-width: 90vw;
 }
@@ -377,7 +378,8 @@ header
 
 .header-area .main-nav .nav {
   float: right;
-  margin-top: 30px;
+  margin-top: 0;
+  padding-top: 10px;
   margin-right: 0px;
   background-color: transparent;
   -webkit-transition: all 0.3s ease 0s;
@@ -894,7 +896,7 @@ Banner Style
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  top: 100px;
+  top: 80px;
   /*width: 212px;*/
   height: 653px;
   width: 100%;
@@ -1549,7 +1551,11 @@ contact
 .contact-us {
   margin-top: 90px;
   padding: 120px 0px;
-  background-image: url(../images/contact.png);
+  /*background-image: url(../images/contact.png);*/
+  box-shadow: #838383 3px 3px 8px;
+  border: solid 2px #ffff;
+  border-radius: 25px;
+  color:black;
   background-repeat: no-repeat;
   background-size: auto 100%;
   width: 100%;
