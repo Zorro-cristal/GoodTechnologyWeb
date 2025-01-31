@@ -278,6 +278,13 @@ header
 --------------------------------------------- 
 */
 
+.rounded-box {
+  padding: 20px;
+  border-radius: 15px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(15, 66,211, 0.65));
+  margin: 20px auto; /* Centra el div en la página */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
 .background-header {
   background-color: var(--primary-color)!important;
   height: 80px!important;
@@ -881,13 +888,16 @@ Banner Style
 
 .main-banner:after {
   content: '';
-  background-image: url(../images/banner-dec-left.png);
+  filter: brightness(1.5);
+  background-image: url(../images/banner2.jpg);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
   top: 100px;
-  width: 212px;
+  /*width: 212px;*/
   height: 653px;
+  width: 100%;
   z-index: -1;
 }
 
@@ -933,9 +943,6 @@ Banner Style
   color: #2a2a2a;
   line-height: 120%;
   background: #1B4283;
-  background: -webkit-linear-gradient(180deg, #4267B2 0%, #1B4283 100%);
-  background: -moz-linear-gradient(180deg, #4267B2 0%, #1B4283 100%);
-  background: linear-gradient(180deg, #4267B2 0%, #1B4283 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -950,16 +957,11 @@ Banner Style
   margin-top: 30px;
   padding-top: 20px;
   margin-bottom: 45px;
-  width: 90%;
-  padding-left: 10%;
   font-size: 100%;
   font-weight: 800;
   color: #2a2a2a;
   line-height: 150%;
-  background: #289951;
-  background: -webkit-linear-gradient(180deg, #3cb371 0%, #289951 100%);
-  background: -moz-linear-gradient(180deg, #3cb371 0%, #289951 100%);
-  background: linear-gradient(180deg, #3cb371 0%, #289951 100%);
+  background: #14502a;;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: none;
@@ -1547,10 +1549,10 @@ contact
 .contact-us {
   margin-top: 90px;
   padding: 120px 0px;
-  background-image: url(../images/contact-bg.jpg);
+  background-image: url(../images/contact.png);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-size: auto 100%;
+  width: 100%;
 }
 .contact-us .section-heading {
   text-align: center;
