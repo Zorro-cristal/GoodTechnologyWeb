@@ -994,10 +994,6 @@ Features Style
 --------------------------------------------- 
 */
 
-#features {
-  padding-top: 130px;
-}
-
 .features .features-content {
   z-index: 2;
   position: relative;
@@ -1340,10 +1336,6 @@ About Us Style
 --------------------------------------------- 
 */
 
-#about {
-  padding-top: 130px;
-}
-
 .about-us .section-heading {
   margin-bottom: 40px;
 }
@@ -1375,10 +1367,6 @@ About Us Style
 Services Style
 --------------------------------------------- 
 */
-
-.our-services {
-  padding-top: 120px;
-}
 
 .our-services .section-heading {
   text-align: center;
@@ -1435,7 +1423,6 @@ Portfolio
 */
 
 .our-portfolio {
-  padding-top: 100px;
   overflow: hidden;
 }
 
