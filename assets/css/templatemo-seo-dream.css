@@ -151,7 +151,7 @@ p {
 }
 
 img {
-  width: 100%;
+  width: 80px;
   overflow: hidden;
 }
 
@@ -892,7 +892,7 @@ Banner Style
   content: '';
   filter: brightness(1.5);
   background-image: url(../images/banner2.jpg);
-  background-size: 100% 100%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -1021,6 +1021,10 @@ Features Style
   background: linear-gradient(105deg, var(--background-primary-color2) 0%, var(--background-primary-color1) 100%);
 }
 
+.features-item:hover img {
+  filter: brightness(0) invert(1);
+}
+
 .features-item:hover h4 {
   color: #fff;
 }
@@ -1031,14 +1035,6 @@ Features Style
 
 .features-item:hover .line-dec {
   background-color: rgba(255,255,255,0.3);
-}
-
-.first-feature:hover .icon {
-  background-image: url(../images/features-icon-white-01.png);
-}
-
-.second-feature:hover .icon {
-  background-image: url(../images/features-icon-white-02.png);
 }
 
 .features-item .number h6 {
