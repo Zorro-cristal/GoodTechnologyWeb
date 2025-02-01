@@ -891,7 +891,7 @@ Banner Style
 .main-banner:after {
   content: '';
   filter: brightness(1.5);
-  background-image: url(../images/banner2.jpg);
+  background-image: url(../images/fondoGoodTechnology.png);
   background-size: auto 120%;
   background-repeat: no-repeat;
   position: absolute;
