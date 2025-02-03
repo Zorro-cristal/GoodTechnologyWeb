@@ -271,6 +271,9 @@ body {
   border-bottom: 2px solid var(--primary-color)!important;
 }
 
+.row {
+  width: 100%;
+}
 
 /* 
 ---------------------------------------------

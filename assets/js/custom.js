@@ -18,14 +18,24 @@
 
 	$('.loop').owlCarousel({
       center: true,
-      items:2,
       loop:true,
-      nav: true,
       margin:30,
+      autoWidth:true,
       responsive:{
-          
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          800: {
+            items: 3
+          },
           992:{
               items:4
+          },
+          1400: {
+            items: 5
           }
       }
   });
