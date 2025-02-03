@@ -18,7 +18,7 @@ reset
 */
 
 :root {
-  --primary-color: #0f42d3;
+  --primary-color: #1B4283;;
   --secondary-color: #38b54d;
 
   --background-primary-color1: #2c4293;
@@ -893,6 +893,7 @@ Banner Style
   filter: brightness(1);
   background-image: url(../images/fondoGoodTechnology.png);
   background-size: auto 120%;
+  background-position: center;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -906,8 +907,9 @@ Banner Style
 .main-banner:before {
   content: '';
   filter: brightness(1.5);
-  background-image: url(../images/banner2.jpg);
+  background-image: url(../images/fondoGoodTechnology.jpg);
   background-size: auto 120%;
+  background-position: center;
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -1703,6 +1705,12 @@ responsive
 }
 
 @media (max-width: 992px) {
+  .main-banner:after {
+    background-size: auto 100%;
+  }
+  .main-banner:before {
+    background-size: auto 100%;
+  }
   .header-area .main-nav .logo h4 {
     font-size: 20px;
   }
@@ -1753,6 +1761,12 @@ responsive
 }
 
 @media (max-width: 767px) {
+  .main-banner:after {
+    background-size: auto 80%;
+  }
+  .main-banner:before {
+    background-size: auto 80%;
+  }
   .header-area .main-nav .logo h4 {
     font-size: 30px;
   }
