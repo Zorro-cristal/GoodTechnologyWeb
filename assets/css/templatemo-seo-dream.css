@@ -1818,7 +1818,7 @@ responsive
     margin-top: 15px;
   }
   form#contact {
-    padding: 30px;
+    padding: unset;
   }
   .logo {
     margin-left: 0 !important;
