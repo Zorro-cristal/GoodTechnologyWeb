@@ -35,10 +35,6 @@
           },
           992:{
               items:4
-          },
-          1500: {
-            items: 5,
-            nav: false
           }
       }
   });
@@ -118,7 +114,28 @@
 	 $(window).on('load', function() {
 
         $('#js-preloader').addClass('loaded');
-
+        $('.loop').owlCarousel({
+          center: true,
+          loop:true,
+          margin:30,
+          autoPlay:true,
+          autoWidth:true,
+          nav: false,
+          responsive:{
+              0: {
+                items: 1
+              },
+              600: {
+                items: 2
+              },
+              800: {
+                items: 3
+              },
+              992:{
+                  items:4
+              }
+          }
+      });
     });
 
 	
