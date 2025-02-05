@@ -275,6 +275,8 @@ body {
 
 .row {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
@@ -903,7 +905,7 @@ Banner Style
   filter: brightness(1);
   background-image: url(../images/fondoGoodTechnology.png);
   background-size: auto 120%;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -966,6 +968,8 @@ Banner Style
 .container {
   padding-top: 10px;
   max-width: none;
+  display: flex;
+  justify-content: center;
 }
 
 .main-banner .left-content .h2-secondary {
