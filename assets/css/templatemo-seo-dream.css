@@ -155,7 +155,7 @@ img {
   overflow: hidden;
 }
 
-.map-footer {
+#map_footer {
   justify-content: end;
   display: grid;
 }
@@ -1836,7 +1836,7 @@ responsive
   }
   .logo {
     margin-left: 0 !important;
-    max-width: 50vw;
+    max-width: 40vw;
   }
   h2 {
     font-size: 25px !important;
