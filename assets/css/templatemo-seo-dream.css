@@ -155,6 +155,11 @@ img {
   overflow: hidden;
 }
 
+.map-footer {
+  justify-content: end;
+  display: grid;
+}
+
 /* 
 ---------------------------------------------
 global styles
@@ -291,7 +296,7 @@ header
 */
 
 .rounded-box {
-  padding: 20px;
+  padding: 15px;
   border-radius: 15px;
   background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255,255, 0.65));
   margin: 20px auto; /* Centra el div en la página */
@@ -953,9 +958,9 @@ Banner Style
 
 .main-banner .left-content h2 {
   /* border-top: 1px solid #eee; */
-  margin-top: 30px;
-  padding-top: 20px;
-  margin-bottom: 45px;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
   font-size: 200%;
   font-weight: 800;
   color: #2a2a2a;
@@ -970,13 +975,14 @@ Banner Style
   max-width: none;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .main-banner .left-content .h2-secondary {
   /* border-top: 1px solid #eee; */
-  margin-top: 30px;
-  padding-top: 20px;
-  margin-bottom: 45px;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
   font-size: 100%;
   font-weight: 800;
   color: #2a2a2a;
@@ -1816,6 +1822,12 @@ responsive
   }
   .about-us .about-item {
     margin-top: 15px;
+  }
+  .contact-us .container .row .fadeInUp {
+    padding: unset;
+  }
+  .contact-info {
+    padding: 20px 5px;
   }
   form#contact {
     padding: unset;

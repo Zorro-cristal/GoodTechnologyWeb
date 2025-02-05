@@ -1,6 +1,6 @@
 // Se ejecuta al cargar la pagina
 $(window).on('load',function() {
-    // Obtiene e implamenta la inforamcion en el json.
+    /* // Obtiene e implamenta la inforamcion en el json.
     fetch('../../info.json').then(
         response => response.json()).then(
             data => {
@@ -8,7 +8,7 @@ $(window).on('load',function() {
                 document.getElementById('cant_clientes').innerHTML= data.cant_clientes + "+";
                 document.getElementById('cant_proyectos').innerHTML= data.cant_proyectos + "+";
             }
-        ).catch(error => console.error("Error al recuperar informacion del JSON: ", error));
+        ).catch(error => console.error("Error al recuperar informacion del JSON: ", error)); */
 });
 
 function enviarCorreo(formulario_event) {

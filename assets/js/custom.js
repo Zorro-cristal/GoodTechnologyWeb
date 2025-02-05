@@ -20,7 +20,9 @@
       center: true,
       loop:true,
       margin:30,
+      autoPlay:true,
       autoWidth:true,
+      nav: false,
       responsive:{
           0: {
             items: 1
@@ -34,8 +36,9 @@
           992:{
               items:4
           },
-          1400: {
-            items: 5
+          1500: {
+            items: 5,
+            nav: false
           }
       }
   });
