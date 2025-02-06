@@ -18,7 +18,7 @@ reset
 */
 
 :root {
-  --primary-color: #1B4283;;
+  --primary-color: #38759f;
   --secondary-color: #38b54d;
 
   --background-primary-color1: #2c4293;
@@ -185,6 +185,9 @@ body {
   html, body {
     overflow-x: hidden;
   }
+  .margintoppx{
+	margin-top:0px;
+}
   .mobile-top-fix {
     margin-top: 30px;
     margin-bottom: 0px;
@@ -682,6 +685,9 @@ header
   .background-header .main-nav .nav {
     margin-top: 80px !important;
   }
+  .margintoppx{
+	margin-top:0px;
+}
   .header-area .main-nav .logo {
     color: #1e1e1e;
   }
@@ -901,26 +907,27 @@ Banner Style
 .main-banner {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: cover;  /* Asegura que la imagen cubra todo el contenedor */
   padding: 150px 0px 120px 0px;
   position: relative;
   overflow: hidden;
+      height: 100vh;
 }
 
 .main-banner:after {
   content: '';
   background-image: url(../images/banner2.webp);
-  background-size: auto 150%;
-  background-position: center 0px;
+  background-size: cover; /* Asegura que la imagen del after también se adapte */
+  background-position: center center;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  top: -150px;
-  /*width: 212px;*/
-  height: 653px;
+  top: 70px;  /* Asegura que la imagen se coloque correctamente */
+  height: 100%; /* Que ocupe el 100% del alto del contenedor */
   width: 100%;
   z-index: -1;
 }
+
 
 .main-banner .left-content {
   margin-right: 45px;
@@ -1024,16 +1031,19 @@ Features Style
   margin-bottom: 25px;
   border-radius: 50px;
   background: rgb(255,255,255);
-  background: linear-gradient(105deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
+  /* background: linear-gradient(105deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%); */
   transition: background-color .5s;
   -webkit-transition: background-color .5s;
   -o-transition: background-color .5s;
   -moz-transition: background-color .5s;
 }
+.margintoppx{
+	margin-top:-150px;
+}
 
 .features-item:hover {
-  background: rgb(51,204,197);
-  background: linear-gradient(105deg, var(--background-primary-color2) 0%, var(--background-primary-color1) 100%);
+  background: var(--primary-color);
+  background: linear-gradient(105deg, var(--background-primary-color2) 0%, var(--primary-color) 100%);
 }
 
 .features-item:hover img {
@@ -1721,6 +1731,11 @@ responsive
   .main-banner:after {
     background-size: auto 100%;
   }
+  .margintoppx{
+	margin-top:0px;
+}
+
+  
   .main-banner:before {
     background-size: auto 100%;
   }
@@ -1775,6 +1790,10 @@ responsive
     background-size: auto 80%;
     height: 1000px;
   }
+  
+  .margintoppx{
+	margin-top:0px;
+}
   .main-banner:before {
     background-size: auto 80%;
     height: 1000px;
@@ -1838,4 +1857,41 @@ responsive
   .line-dec {
     margin: 15px auto !important;
   }
+}
+
+
+
+ .service-item {
+    height: 100%;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .icon {
+    margin-bottom: 20px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .card-text {
+    flex-grow: 1;
+  }
+  
+  
+  
+  section.main-banner {
+  margin-bottom: 0;
+}
+
+.container {
+  margin-top: 0;
 }
