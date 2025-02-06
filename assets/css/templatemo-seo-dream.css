@@ -1934,11 +1934,15 @@ responsive
 
 .copyright {
   display:grid;
+  color: white;
   justify-content: center;
 }
 
 .redes-logo a {
   width: fit-content !important;
+  color: white;
+  border: 3px solid white !important;
+  margin-inline: 5px;
   height: 50px;
   width: 60px;
 }
@@ -1948,7 +1952,7 @@ i {
   width: 100%;
   height: 100%;
   font-size: 200%;
-  color: gray;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
