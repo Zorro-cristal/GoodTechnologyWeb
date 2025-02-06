@@ -199,7 +199,19 @@ body {
     margin-bottom: 60px;
   }
   #menu_footer {
-    display: none;
+    display: none !important;
+  }
+  #num_footer {
+    width: auto;
+  }
+  #dir_footer {
+    width: auto;
+  }
+  #redes_logo {
+    width: 32%;
+    .row {
+      justify-content: end !important;
+    }
   }
   .col-lg-6, .col-lg-9 {
     padding: 0%;
@@ -1705,6 +1717,22 @@ footer p a:hover {
   color: #4771cb;
 }
 
+@media (max-width: 755px) {
+  #dir_footer .row p{
+    min-width: 40vw;
+  }
+  #redes_logo .row{
+    width: 90vw;
+    justify-content: space-evenly !important;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 580px) {
+  #dir_footer .row p{
+    min-width: 70vw;
+  }
+}
 /* 
 ---------------------------------------------
 responsive
@@ -1740,10 +1768,8 @@ responsive
 	top: 0px; 
   }
   .margintoppx{
-	margin-top:0px;
-}
-
-  
+	  margin-top:0px;
+  }
   .main-banner:before {
     background-size: auto 100%;
   }
