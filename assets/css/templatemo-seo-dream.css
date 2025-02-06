@@ -1718,19 +1718,20 @@ footer p a:hover {
 }
 
 @media (max-width: 755px) {
-  #dir_footer .row p{
-    min-width: 40vw;
+  #dir_footer {
+    display: none !important;
   }
   #redes_logo .row{
-    width: 90vw;
     justify-content: space-evenly !important;
-    margin-top: 5px;
   }
 }
 
-@media (max-width: 580px) {
-  #dir_footer .row p{
-    min-width: 70vw;
+@media (max-width: 450px) {
+  #num_footer{
+    display: none !important;
+  }
+  #redes_logo .row {
+    width: 90vw;
   }
 }
 /* 
