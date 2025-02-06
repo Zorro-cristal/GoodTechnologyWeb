@@ -687,6 +687,10 @@ header
   }
   .margintoppx{
 	margin-top:0px;
+}.main-banner:after {
+
+  top: 0px;  /* Asegura que la imagen se coloque correctamente */
+ 
 }
   .header-area .main-nav .logo {
     color: #1e1e1e;
@@ -1711,7 +1715,11 @@ responsive
 @media (max-width: 1200px) {
   .main-banner:after {
     background-size: auto 125%;
+	top: 0px; 
   }
+
+  
+  
   .main-banner:before {
     background-size: auto 125%;
   }
@@ -1730,6 +1738,7 @@ responsive
 @media (max-width: 992px) {
   .main-banner:after {
     background-size: auto 100%;
+	top: 0px; 
   }
   .margintoppx{
 	margin-top:0px;
@@ -1789,8 +1798,9 @@ responsive
   .main-banner:after {
     background-size: auto 80%;
     height: 1000px;
+	top: 0px; 
   }
-  
+ 
   .margintoppx{
 	margin-top:0px;
 }
