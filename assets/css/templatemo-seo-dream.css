@@ -1943,8 +1943,8 @@ responsive
   width: 60px;
 }
 
-.redes-logo a i {
-  margin: auto;
+i {
+  margin: auto !important;
   width: 100%;
   height: 100%;
   font-size: 200%;
