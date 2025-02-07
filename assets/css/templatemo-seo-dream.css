@@ -1948,8 +1948,8 @@ i {
   height: 25px !important;
   width: 25px !important;
   font-size: 150%;
-  color: black;
-  border: 2px solid black;
+  color: gray;
+  border: 2px solid gray;
   border-radius: 30px;
   display: flex;
   align-items: center;
