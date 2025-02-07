@@ -57,7 +57,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
   padding: 0;
   border: 0;
   outline: 0;
-  overflow-x: hidden;
+  
 }
 
 a {
@@ -298,11 +298,6 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.section {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 /* 
