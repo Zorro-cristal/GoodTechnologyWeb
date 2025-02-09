@@ -28,6 +28,10 @@ reset
   --background-secondary-color2: #42b94f;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #whatsapp-button {
   position: fixed; 
   bottom: 20px; 
@@ -57,7 +61,6 @@ figure, header, nav, section, article, aside, footer, figcaption {
   padding: 0;
   border: 0;
   outline: 0;
-  
 }
 
 a {
@@ -1718,12 +1721,16 @@ footer p a:hover {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 525px) {
   #num_footer{
     display: none !important;
   }
   #redes_logo .row {
     width: 90vw;
+    a i {
+      border: none !important;
+      font-size: 200%;
+    }
   }
 }
 /* 
@@ -1731,6 +1738,9 @@ footer p a:hover {
 responsive
 --------------------------------------------- 
 */
+.top-container {
+  max-width: 450px;
+}
 
 @media (max-width: 1200px) {
   .main-banner:after {
@@ -1810,6 +1820,9 @@ responsive
   form#contact {
     padding: 45px;
   }
+  .top-container {
+    max-width: 430px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1821,7 +1834,7 @@ responsive
  
   .margintoppx{
 	margin-top:0px;
-}
+  }
   .main-banner:before {
     background-size: auto 80%;
     height: 1000px;
@@ -1885,9 +1898,16 @@ responsive
   .line-dec {
     margin: 15px auto !important;
   }
+  .top-container {
+    max-width: 350px;
+  }
 }
 
-
+@media (max-width: 400px) {
+  .top-container {
+    max-width: 100vw !important;
+  }
+}
 
  .service-item {
     height: 100%;
