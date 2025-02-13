@@ -1712,7 +1712,7 @@ footer p a:hover {
   color: #4771cb;
 }
 
-@media (max-width: 755px) {
+@media (max-width: 940px) {
   #dir_footer {
     display: none !important;
   }
