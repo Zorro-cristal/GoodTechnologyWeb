@@ -398,9 +398,13 @@ footer{
 }
 
 .box__footer h2{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     color: #242424;
     font-weight: 700;
+}
+
+.box__footer hr{
+    margin: 0;
 }
 
 .box__footer a{
@@ -435,6 +439,7 @@ footer{
 .box__copyright p{
     padding: 10px 0px 5px;
     color: #7a7a7a;
+    text-align: center;
 }
 
 .box__copyright hr{
