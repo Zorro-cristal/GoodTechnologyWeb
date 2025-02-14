@@ -926,7 +926,7 @@ Banner Style
 
 .main-banner:after {
   content: '';
-  background-image: url(../images/banner2.webp);
+  /*background-image: url(../images/banner2.webp);*/
   background-size: cover; /* Asegura que la imagen del after también se adapte */
   background-position: center center;
   background-repeat: no-repeat;
@@ -935,7 +935,7 @@ Banner Style
   top: 70px;  /* Asegura que la imagen se coloque correctamente */
   height: 100%; /* Que ocupe el 100% del alto del contenedor */
   width: 100%;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 
 
