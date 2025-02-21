@@ -1742,8 +1742,6 @@ responsive
     background-size: auto 125%;
 	top: 0px; 
   }
-
-  
   
   .main-banner:before {
     background-size: auto 125%;
@@ -1757,6 +1755,14 @@ responsive
   }
   .header-area .main-nav .nav li:last-child {
     padding-left: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-banner img {
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
   }
 }
 
