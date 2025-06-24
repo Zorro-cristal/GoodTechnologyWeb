@@ -1,0 +1,685 @@
+/* Estilos generales */
+
+
+
+/* Paleta basada en #4a6573 */
+:root {
+  --primary-bg: #4a6573;
+  --primary-color: #ffffff;
+  --accent-color: #f8d07a;
+  --text-color: #f0f0f0;
+  --light-bg: #f8f9fa;
+  --dark-bg: #3a4e5a;
+  --card-hover: rgba(255, 255, 255, 0.05);
+  --footer-bg: #3a4e5a;
+  --footer-text: #e0e0e0;
+  --input-bg: #f0f0f0;
+  --input-border: #ccc;
+}
+
+.bg-primary {
+  background: var(--primary-bg);
+}
+
+/* Preloader Styles */
+.js-preloader {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.dot1, .dot2, .dot3 {
+  background-color: var(--accent-color);
+}
+
+/* Header Styling */
+.header-area {
+  background: var(--primary-bg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav ul li a {
+  color: var(--primary-color);
+}
+
+.main-nav ul li a:hover, .main-nav ul li a.active {
+  color: var(--accent-color);
+}
+
+.menu-trigger {
+  color: var(--accent-color);
+}
+
+.menu-trigger span {
+  background-color: var(--accent-color);
+}
+
+/* Main Banner */
+.main-banner {
+  background: url('path_to_your_image.jpg') no-repeat center center/cover;
+  color: var(--primary-color);
+}
+
+.header-text {
+  color: var(--primary-color);
+}
+
+.header-text h1,
+.header-text p {
+  color: var(--primary-color);
+}
+
+.header-text .btn {
+  background-color: var(--accent-color);
+  color: var(--primary-bg);
+}
+
+.header-text .btn:hover {
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+}
+
+/* Servicios */
+#servicios {
+  background-color: var(--light-bg);
+}
+
+#servicios h2 {
+  color: var(--dark-bg);
+}
+
+.card {
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+  border: none;
+}
+
+.card:hover {
+  background-color: var(--card-hover);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title,
+.card-text {
+  color: var(--primary-color);
+}
+
+.card i {
+  color: var(--accent-color);
+}
+
+/* Formulario de Contacto */
+#contacto {
+  background-color: var(--light-bg);
+  color: var(--dark-bg);
+}
+
+#contacto h2,
+#contacto p {
+  color: var(--dark-bg);
+}
+
+#contacto .form-label {
+  color: var(--dark-bg);
+}
+
+#contacto .form-control {
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: #333;
+}
+
+#contacto .form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem rgba(248, 208, 122, 0.25);
+}
+
+#contacto .btn {
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+}
+
+#contacto .btn:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-bg);
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+}
+
+footer h5 {
+  color: var(--accent-color);
+}
+
+footer p,
+footer a {
+  color: var(--footer-text);
+}
+
+footer a:hover {
+  color: var(--accent-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .col-md-4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .col-md-4 {
+    width: 33.33%;
+  }
+}
+
+/* Portfolio & Services padding tweaks */
+.portfolio-item .hover-content {
+  display: none;
+}
+
+.service-item .card-body {
+  padding: 20px;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .service-item .card-body {
+    padding: 15px;
+  }
+}
+
+
+
+
+
+.bg-primary {
+  background: linear-gradient(90deg, #0056b3 0%, #003d80 100%);
+}
+
+/* Preloader Styles */
+.js-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.preloader-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot1, .dot2, .dot3 {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  background-color: #007bff;
+  border-radius: 50%;
+  animation: dot-animation 1.2s infinite ease-in-out;
+}
+
+.dot2 {
+  animation-delay: 0.2s;
+}
+
+.dot3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes dot-animation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+/* Header Styling */
+.header-area {
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.main-nav ul li a {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover, .main-nav ul li a.active {
+  color: #007bff;
+}
+
+.menu-trigger {
+  display: none;
+  font-size: 18px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50%;
+    box-shadow: -2px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-trigger {
+    display: block;
+  }
+
+  .main-nav ul.open {
+    display: flex;
+  }
+}
+
+/* Transición al abrir el menú */
+.menu-trigger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 5px auto;
+  transition: transform 0.3s ease;
+}
+
+.menu-trigger.open span {
+  transform: rotate(45deg);
+}
+
+.menu-trigger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-trigger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* Main Banner */
+.main-banner {
+  position: relative;
+  height: 100vh;
+  background: url('path_to_your_image.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.header-text {
+  color: #fff;
+}
+
+.header-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.header-text p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.header-text .btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.header-text .btn:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 767px) {
+  .header-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-text p {
+    font-size: 1rem;
+  }
+
+  .header-text .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Estilo general de la sección */
+#servicios {
+  background-color: #f8f9fa;
+}
+
+#servicios h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#servicios p {
+  font-size: 1.125rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 40px;
+}
+
+/* Estilo de las tarjetas */
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Iconos */
+.card i {
+  font-size: 3rem;
+  color: #007bff;
+}
+
+/* Responsividad - para dispositivos móviles y tabletas */
+@media (max-width: 767px) {
+  #servicios h2 {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  /* Cambiar la disposición de las tarjetas para móviles */
+  .col-md-4 {
+    /* Las tarjetas se mostrarán en una sola columna en móviles */
+    width: 100%;
+  }
+
+  /* Reducir el padding para dispositivos pequeños */
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .card i {
+    font-size: 2.5rem; /* Reducir el tamaño de los iconos en pantallas pequeñas */
+  }
+}
+
+/* Responsividad - para tabletas en orientación horizontal */
+@media (max-width: 1024px) and (min-width: 768px) {
+  #servicios h2 {
+    font-size: 2.25rem;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  /* 3 columnas en tabletas */
+  .col-md-4 {
+    width: 33.33%;
+  }
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 767px) {
+  .portfolio-item .thumb {
+    margin-bottom: 15px; /* Separa un poco más las imágenes en móviles */
+  }
+
+  .portfolio-item .inner-content {
+    padding: 10px;
+  }
+
+  /* Desactivar el efecto hover en móviles */
+  .portfolio-item .hover-content {
+    display: none; /* El contenido hover desaparece en móviles */
+  }
+}
+
+/* Responsividad para tabletas */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .portfolio-item .thumb {
+    margin-bottom: 20px; /* Separa las imágenes en tabletas */
+  }
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 767px) {
+  .service-item .card-body {
+    padding: 20px; /* Agrega un poco más de espacio en móviles */
+  }
+}
+
+/* Responsividad para tabletas */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .service-item .card-body {
+    padding: 15px; /* Ajusta el padding para tabletas */
+  }
+}
+
+
+/* Sección de contacto */
+.bg-soft-light {
+  background-color: #f0f8ff; /* Color suave para el fondo */
+}
+
+.text-soft-primary {
+  color: #3498db; /* Color suave para los títulos */
+}
+
+.btn-soft-primary {
+  background-color: #3498db; /* Botón suave en azul */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-soft-primary:hover {
+  background-color: #2980b9; /* Color más oscuro para hover */
+}
+
+/* Footer */
+.bg-soft-dark {
+  background-color: #2c3e50; /* Fondo oscuro, pero suave */
+}
+
+.text-soft-warning {
+  color: #f39c12; /* Amarillo suave para los títulos */
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ecf0f1; /* Color claro para enlaces en hover */
+}
+
+/* Fondo y color de los inputs */
+.form-control {
+  background-color: #ecf0f1; /* Fondo suave para inputs */
+  border: 1px solid #bdc3c7; /* Borde gris suave */
+}
+
+.form-control:focus {
+  border-color: #3498db; /* Borde azul suave al hacer focus */
+}
+
+/* Asegúrate de que los iconos sean claros */
+footer i {
+  color: #ecf0f1;
+}
+
+footer i:hover {
+  color: #3498db; /* Color azul suave en hover */
+}
+
+
+.btn-soft-primary {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-soft-primary:hover {
+  transform: translateY(-5px); /* Efecto de elevarse al hacer hover */
+  background-color: #2980b9;
+}
+
+footer a {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer a:hover {
+  transform: translateX(5px); /* Efecto de desplazamiento lateral */
+  color: #ecf0f1;
+}
+
+.form-control:valid {
+  border-color: #28a745; /* Verde para campos válidos */
+}
+
+.form-control:invalid {
+  border-color: #dc3545; /* Rojo para campos no válidos */
+}
+
+.form-control:valid + .valid-feedback {
+  display: block;
+}
+
+.form-control:invalid + .invalid-feedback {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .header-text h1 {
+    font-size: 2rem;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.header-area {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #4a6573;
+  transition: all 0.3s ease;
+}
+
+.header-area .nav a {
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.header-area .nav a:hover,
+.header-area .nav a.active {
+  color: #f8d07a; /* Color suave para hover/activo */
+}
+
+.menu-trigger {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-trigger:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-nav-open .main-nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #4a6573;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+

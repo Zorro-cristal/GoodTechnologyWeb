@@ -932,7 +932,7 @@ Banner Style
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  top: 70px;  /* Asegura que la imagen se coloque correctamente */
+  /* top: 70px;  /* Asegura que la imagen se coloque correctamente */ */
   height: 100%; /* Que ocupe el 100% del alto del contenedor */
   width: 100%;
   /*z-index: -1;*/

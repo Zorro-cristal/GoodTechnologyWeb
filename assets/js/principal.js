@@ -27,3 +27,31 @@ function enviarCorreo(formulario_event) {
     window.location.href = `mailto:administracion@goodtechnology.com.py?subject=${subject}&body=${message}%0D%0A${informacion_extra}`;
     //console.log(`mailto:administracion@goodtechnology.com.py?subject=${subject}&body=${message}%0D%0A${informacion_extra}`);
 }
+
+
+// Menú Responsive
+const menuTrigger = document.querySelector('.menu-trigger');
+const mainNav = document.querySelector('.main-nav ul');
+
+menuTrigger.addEventListener('click', () => {
+  mainNav.classList.toggle('open');
+  menuTrigger.classList.toggle('open');
+});
+
+// Preloader
+window.addEventListener('load', () => {
+  const preloader = document.querySelector('.js-preloader');
+  if (preloader) {
+    preloader.style.display = 'none';
+  }
+});
+
+
+// JS para activar el menú móvil
+document.querySelector('.menu-trigger').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('.header-area').classList.toggle('mobile-nav-open');
+});
+
+
+
